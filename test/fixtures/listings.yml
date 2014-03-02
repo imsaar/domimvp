@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  open_to_student_only: false
+  rent_per_month: 9.99
+  is_available: 2014-03-02 20:59:08
+  user_id: 
+
+two:
+  open_to_student_only: false
+  rent_per_month: 9.99
+  is_available: 2014-03-02 20:59:08
+  user_id: 
