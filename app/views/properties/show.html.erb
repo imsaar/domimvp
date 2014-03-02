@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total bedrooms:</strong>
+  <%= @property.total_bedrooms %>
+</p>
+
+<p>
+  <strong>Total bathrooms:</strong>
+  <%= @property.total_bathrooms %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @property.description %>
+</p>
+
+<p>
+  <strong>Commute to campus in minutes:</strong>
+  <%= @property.commute_to_campus_in_minutes %>
+</p>
+
+<p>
+  <strong>Listing:</strong>
+  <%= @property.listing %>
+</p>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>

@@ -1,4 +1,6 @@
 Domimvp::Application.routes.draw do
+  resources :properties
+
   resources :tenants
 
   resources :rooms
