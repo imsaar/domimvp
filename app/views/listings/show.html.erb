@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Open to student only:</strong>
+  <%= @listing.open_to_student_only %>
+</p>
+
+<p>
+  <strong>Rent per month:</strong>
+  <%= @listing.rent_per_month %>
+</p>
+
+<p>
+  <strong>Is available:</strong>
+  <%= @listing.is_available %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @listing.user %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>
