@@ -1,4 +1,6 @@
 Domimvp::Application.routes.draw do
+  resources :subletters
+
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords", omniauth_callbacks: "users/omniauth_callbacks"}, skip: [:sessions, :registrations]
   get "homes/index"
   # The priority is based upon order of creation: first created -> highest priority.

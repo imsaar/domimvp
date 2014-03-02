@@ -1,0 +1,27 @@
+<h1>Listing subletters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subletters.each do |subletter| %>
+      <tr>
+        <td><%= subletter.user %></td>
+        <td><%= link_to 'Show', subletter %></td>
+        <td><%= link_to 'Edit', edit_subletter_path(subletter) %></td>
+        <td><%= link_to 'Destroy', subletter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subletter', new_subletter_path %>
