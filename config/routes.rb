@@ -1,4 +1,6 @@
 Domimvp::Application.routes.draw do
+  resources :rooms
+
   resources :listings
 
   resources :subletters
