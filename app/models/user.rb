@@ -6,6 +6,9 @@ class User < ActiveRecord::Base
   devise :omniauthable
 
   #->Prelang (user_login/devise)
+  has_one :tenant
+  has_one :subletter
+  has_many :listings
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
 
