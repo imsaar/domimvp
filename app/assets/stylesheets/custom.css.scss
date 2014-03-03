@@ -1,0 +1,158 @@
+/*.navbar-brand {
+  background-image: url("assets/domiapp,png");
+  background-size: 30px 90px;
+  background-repeat: no-repeat;
+}*/
+
+/*listing*/
+
+#new-listing {
+  background-color: #025488;
+  font-family: Lucida Grande;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+   a {
+    color: white;
+  }
+   :hover {
+    background-color: #0066CD;
+  }
+}
+
+
+/*end of listing*/
+
+/*property*/
+
+.property {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  width: 275px;
+  height: 100%;
+  margin: 0 10px;
+  padding: 10px 0;
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Lucida Grande;
+  }
+  p {
+    background-color: #025488;
+    font-family: Lucida Grande;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  p:hover {
+    background-color: #0066CD;
+  }
+  p a {
+    color: white;
+  }
+  p a:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+
+/*end of property*/
+
+/*room*/
+
+.room {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  width: 275px;
+  height: 100%;
+  margin: 0 10px;
+  padding: 10px 0;
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Lucida Grande;
+  }
+  p {
+    background-color: #025488;
+    font-family: Lucida Grande;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  p:hover {
+    background-color: #0066CD;
+  }
+  p a {
+    color: white;
+  }
+  p a:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+/*end of room*/
+
+
+/*listing */
+
+.listing {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  width: 275px;
+  height: 100%;
+  margin: 0 10px;
+  padding: 10px 0;
+  li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Lucida Grande;
+  }
+  p {
+    background-color: #025488;
+    font-family: Lucida Grande;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  p:hover {
+    background-color: #0066CD;
+  }
+  p a {
+    color: white;
+  }
+  p a:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+/*end of listing*/
+
