@@ -1,4 +1,4 @@
-<h1>Listing rooms</h1>
+<h1><%= @property.address %></h1>
 
 <div class="room">
     <% @rooms.each do |room| %>
@@ -9,6 +9,7 @@
         <li><%= room.listing %></li>
       </ul>
     <% end %>
-    <p><%= link_to 'Learn More', property_room %></p>
+    <p><%= link_to "Add a room", new_property_room_path %></p>
 </div>
+
 

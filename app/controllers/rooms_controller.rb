@@ -8,8 +8,8 @@ class RoomsController < ApplicationController
   # GET /rooms
   # GET /rooms.json
   def index
-    @property = Property.find(params[:id])
-    @room = @property.rooms.find(params[:id])
+    @property = Property.find(params[:property_id])
+    @rooms = @property.rooms
   end
 
   # GET /rooms/1
