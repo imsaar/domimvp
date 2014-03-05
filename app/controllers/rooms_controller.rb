@@ -15,10 +15,13 @@ class RoomsController < ApplicationController
   # GET /rooms/1
   # GET /rooms/1.json
   def show
+    @property = Property.find(params[:property_id])
+    @rooms = @property.rooms
   end
 
   # GET /rooms/new
   def new
+    @property = Property.find(params[:property_id])
     @room = Room.new
   end
 
@@ -29,6 +32,7 @@ class RoomsController < ApplicationController
   # POST /rooms
   # POST /rooms.json
   def create
+    @property = Property.find(params[:property_id])
     @room = Room.new(room_params)
 
     respond_to do |format|

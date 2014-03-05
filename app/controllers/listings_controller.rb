@@ -29,8 +29,6 @@ class ListingsController < ApplicationController
   # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
-    @listing.property = Property.find(params[:property_id])
-    @listing.save
 
     respond_to do |format|
       if @listing.save

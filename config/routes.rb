@@ -1,12 +1,13 @@
 Domimvp::Application.routes.draw do
   
-  resources :listings do 
-    resources :properties do
-      resources :rooms
-    end
+  resources :properties do
+    resources :rooms
   end
 
   resources :tenants
+
+
+  resources :listings
 
   resources :subletters
 
