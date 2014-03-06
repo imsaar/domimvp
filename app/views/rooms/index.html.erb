@@ -1,33 +1,15 @@
-<h1>Listing rooms</h1>
+<h1><%= @property.address %></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Tenant</th>
-      <th>Subletter</th>
-      <th>Listing</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="room">
     <% @rooms.each do |room| %>
-      <tr>
-        <td><%= room.property %></td>
-        <td><%= room.tenant %></td>
-        <td><%= room.subletter %></td>
-        <td><%= room.listing %></td>
-        <td><%= link_to 'Show', room %></td>
-        <td><%= link_to 'Edit', edit_room_path(room) %></td>
-        <td><%= link_to 'Destroy', room, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <ul>
+        <li><%= room.property %></li>
+        <li><%= room.tenant %></li>
+        <li><%= room.subletter %></li>
+        <li><%= room.listing %></li>
+      </ul>
     <% end %>
-  </tbody>
-</table>
+    <p><%= link_to "Add a room", new_property_room_path %></p>
+</div>
 
-<br>
 
-<%= link_to 'New Room', new_room_path %>

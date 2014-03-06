@@ -19,6 +19,7 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+    @properties = Property.all
   end
 
   # GET /listings/1/edit
@@ -31,7 +32,7 @@ class ListingsController < ApplicationController
     @listing = Listing.new(listing_params)
 
     respond_to do |format|
-      if @listing.save
+      if @listing.save 
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
         format.json { render action: 'show', status: :created, location: @listing }
       else

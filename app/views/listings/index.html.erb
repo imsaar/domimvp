@@ -1,33 +1,15 @@
-<h1>Listing listings</h1>
+<h1>Places available around Drexel</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Open to student only</th>
-      <th>Rent per month</th>
-      <th>Is available</th>
-      <th>User</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="listing">
     <% @listings.each do |listing| %>
-      <tr>
-        <td><%= listing.open_to_student_only %></td>
-        <td><%= listing.rent_per_month %></td>
-        <td><%= listing.is_available %></td>
-        <td><%= listing.user %></td>
-        <td><%= link_to 'Show', listing %></td>
-        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <ul>
+        <li><%= listing.open_to_student_only %>, it's only for students...</li>
+        <li><%= number_to_currency(listing.rent_per_month) %> per month</li>
+        <li>Starting <%= time_tag Date.today(listing.is_available) %></li>
+        <li><%= listing.user %> is the lister</li>
+      </ul>
+      <p><%= link_to 'Learn More', listing %></p>
     <% end %>
-  </tbody>
-</table>
+</div>
 
-<br>
 
-<%= link_to 'New Listing', new_listing_path %>
